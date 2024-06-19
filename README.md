@@ -14,6 +14,7 @@ You must:
 * Mock all real calls to Datadog/ArgoCD and write functions/methods which only retrieve hard coded struct base on service documentation
 * Handle idempotency (what happen if the CLI fail in the middle of the run)
 
+
 ## Resources
  
 * https://docs.datadoghq.com/api/latest/downtimes/ 
