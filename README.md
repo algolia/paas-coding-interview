@@ -21,3 +21,14 @@ You must:
  
 * https://docs.datadoghq.com/api/latest/downtimes/ 
 * https://cd.apps.argoproj.io/swagger-ui 
+
+## Potential improvements
+
+* Add a logging system instead of click.echo, improve error logging
+* Add unit tests
+* Use real API calls (ArgoCD REST API, DD Python SDK)
+* Check availability of the dependencies (Datadog, ArgoCD) before running the CLI and handle errors gracefully
+* Add a timeout for each step to avoid long running requests
+* Create a github action workflow to automate the CLI run
+* Instrument the CLI with telemetry to audit the runs
+* Add a configuration system to allow the CLI to be configured with environment variables
