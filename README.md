@@ -18,14 +18,14 @@ The CLI must expose a `sync` command that receives:
 
 The command should perform the following workflow:
 
-1. Ensure a Datadog downtime is active for the _the monitor_ associated with that application (note: Datadog downtime = "mute the alert")
+1. Ensure a Datadog downtime is active for _the monitor_ associated with that application (note: Datadog downtime = "mute the alert")
 2. Trigger an ArgoCD app sync for the application.
 3. Remove the Datadog downtime.
 
 > NOTES:
 >
 > - Real API calls are out of scope. You should mock Datadog and ArgoCD interactions with mocks that retrieve hard coded struct inspired on the [service documentation](#resources)
-> - You should handle idempotency (what happen if the CLI fail in the middle of the run)
+> - It is an interesting "plus" if you can handle idempotency (what happen if the CLI fail in the middle of the run)
 > - You should start by forking this repo. As the interview approaches the end you will create a pull request to share your work with us
 > - We will reserve the last 5 minutes for you to ask us any questions
 
