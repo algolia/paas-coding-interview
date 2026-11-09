@@ -24,7 +24,7 @@ The command should perform the following workflow:
 
 > NOTES:
 >
-> - Real API calls are out of scope. You should mock Datadog and ArgoCD interactions with mocks that retrieve hard coded struct inspired on the [service documentation](#resources)
+> - Real API calls are out of scope. You should replace Datadog and ArgoCD interactions with stubs that retrieve hard coded struct inspired on the [service documentation](#resources)
 > - It is an interesting "plus" if you can handle idempotency (what happen if the CLI fail in the middle of the run)
 > - You should start by forking this repo. As the interview approaches the end you will create a pull request to share your work with us
 > - We will reserve the last 5 minutes for you to ask us any questions
