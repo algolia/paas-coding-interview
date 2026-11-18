@@ -18,7 +18,7 @@ The CLI must expose a `sync` command that receives:
 
 The command should perform the following workflow:
 
-1. Ensure a Datadog downtime is active for _the monitor_ associated with that application (note: Datadog downtime = "mute the alert")
+1. Set a Datadog downtime for _the monitor_ associated with that application (note: Datadog downtime = "mute the alert")
 2. Trigger an ArgoCD app sync for the application.
 3. Remove the Datadog downtime.
 
